@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NirvanaHqApi", "src\NirvanaHqApi\NirvanaHqApi.csproj", "{F82B1025-56A7-4D8D-BE53-7352D8491941}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NirvanaHqApi.Test", "tests\UnitTests\NirvanaHqApi.Test\NirvanaHqApi.Test.csproj", "{A46EBA16-92C9-40FB-B76C-F9236D6D3ACF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F82B1025-56A7-4D8D-BE53-7352D8491941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82B1025-56A7-4D8D-BE53-7352D8491941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82B1025-56A7-4D8D-BE53-7352D8491941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82B1025-56A7-4D8D-BE53-7352D8491941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46EBA16-92C9-40FB-B76C-F9236D6D3ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46EBA16-92C9-40FB-B76C-F9236D6D3ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46EBA16-92C9-40FB-B76C-F9236D6D3ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46EBA16-92C9-40FB-B76C-F9236D6D3ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {622E9944-A2E9-4566-B159-23062CC91D42}
+	EndGlobalSection
+EndGlobal
