@@ -10,6 +10,6 @@ namespace NirvanaHqApi.Projects
 
         public Task<List<NirvanaTask>> GetActiveProjects();
 
-        Task<bool> AddNewProject(List<NirvanaTask> tasks);
+        Task<bool> AddNewProjects(List<NirvanaTask> tasks);
     }
 }

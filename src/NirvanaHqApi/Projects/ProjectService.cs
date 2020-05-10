@@ -35,7 +35,7 @@ namespace NirvanaHqApi.Projects
             return activeProjects.ToList();
         }
 
-        public async Task<bool> AddNewProject(List<NirvanaTask> tasks)
+        public async Task<bool> AddNewProjects(List<NirvanaTask> tasks)
         {
             var result = await _taskService.CreateTasks(tasks).ConfigureAwait(false);
 
