@@ -23,7 +23,7 @@ namespace NirvanaHqApi.Test.Tasks
         [Fact]
         public async void ReturnAllTask()
         {
-            var expected = _testData;
+            var expected = new List<NirvanaTask>(_testData);
 
             var sut = new TaskService(new FakeTaskApi(_testData));
 
