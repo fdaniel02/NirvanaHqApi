@@ -34,6 +34,16 @@ namespace NirvanaHqApi.Api
             return tasks;
         }
 
+        public async Task<bool> CreateTask(NirvanaTask task)
+        {
+            Guard.Against.Null(task, nameof(task));
+
+            var tasks = new List<NirvanaTask> { task };
+
+            var result = await CreateTasks(tasks).ConfigureAwait(false);
+            return result;
+        }
+
         public async Task<bool> CreateTasks(List<NirvanaTask> tasks)
         {
             Guard.Against.Null(tasks, nameof(tasks));
