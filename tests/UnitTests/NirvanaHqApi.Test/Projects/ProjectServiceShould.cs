@@ -57,15 +57,5 @@ namespace NirvanaHqApi.Test
 
             actual.Should().BeEquivalentTo(expected);
         }
-
-        //[Fact]
-        //public async void CreateNewProject()
-        //{
-        //    var sut = new ProjectService(_taskServiceMock.Object);
-
-        //    var actual = await sut.GetActiveProjects();
-
-        //    actual.Should().BeEquivalentTo(expected);
-        //}
     }
 }
