@@ -9,5 +9,7 @@ namespace NirvanaHqApi
         public Task<List<NirvanaTask>> GetTasks();
 
         Task<bool> CreateTasks(List<NirvanaTask> tasks);
+
+        Task<bool> CreateTask(NirvanaTask task);
     }
 }

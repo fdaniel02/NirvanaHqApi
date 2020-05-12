@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Ardalis.GuardClauses;
 using NirvanaHqApi.Api;
 using NirvanaHqApi.Models;
 
@@ -11,17 +12,23 @@ namespace NirvanaHqApi.Test.Tasks
 
         public FakeTaskApi(List<NirvanaTask> tasks)
         {
-            _tasks = tasks;
+            _tasks = new List<NirvanaTask>(tasks);
         }
 
         public Task<bool> CreateTask(NirvanaTask task)
         {
-            throw new System.NotImplementedException();
+            Guard.Against.Null(task, nameof(task));
+            _tasks.Add(task);
+
+            return Task.FromResult(true);
         }
 
         public Task<bool> CreateTasks(List<NirvanaTask> tasks)
         {
-            throw new System.NotImplementedException();
+            Guard.Against.Null(tasks, nameof(tasks));
+            _tasks.AddRange(tasks);
+
+            return Task.FromResult(true);
         }
 
         public Task<List<NirvanaTask>> GetTasksFromServer()

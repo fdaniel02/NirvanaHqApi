@@ -8,6 +8,8 @@ namespace NirvanaHqApi.Api
     {
         Task<List<NirvanaTask>> GetTasksFromServer();
 
+        Task<bool> CreateTask(NirvanaTask task);
+
         Task<bool> CreateTasks(List<NirvanaTask> tasks);
     }
 }
