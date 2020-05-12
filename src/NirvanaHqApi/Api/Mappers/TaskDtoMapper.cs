@@ -30,6 +30,11 @@ namespace NirvanaHqApi.Api.Mappers
         {
             string mappedTags = ",";
 
+            if (tags == null)
+            {
+                return mappedTags;
+            }
+
             foreach (var tag in tags)
             {
                 mappedTags = $"{mappedTags}{tag},";
