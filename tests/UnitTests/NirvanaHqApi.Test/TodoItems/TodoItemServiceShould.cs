@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using FluentAssertions;
 using NirvanaHqApi.Enums;
 using NirvanaHqApi.Models;
@@ -35,7 +34,7 @@ namespace NirvanaHqApi.Test.TodoItems
         }
 
         [Fact]
-        public async Task AddNewTodoItemToInboxAsync()
+        public async void AddNewTodoItemToInboxAsync()
         {
             var taskName = "Test Item";
             var task = new NirvanaTask { Name = taskName, Type = TaskType.TodoItem, State = TaskState.Inbox };
