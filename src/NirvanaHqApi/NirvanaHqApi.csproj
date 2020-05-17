@@ -5,6 +5,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <CodeAnalysisRuleSet>../../StyleCopRules.ruleset</CodeAnalysisRuleSet>
+    <Authors>Daniel Farkas</Authors>
+    <Version>0.1.0.2</Version>
+    <Company />
+    <PackageTags>nirvanahq</PackageTags>
+    <PackageProjectUrl>https://github.com/fdaniel02/NirvanaHqApi</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fdaniel02/NirvanaHqApi</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
